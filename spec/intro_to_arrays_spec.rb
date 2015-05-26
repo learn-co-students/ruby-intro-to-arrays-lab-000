@@ -6,11 +6,13 @@ describe "working with arrays" do
     it "creates an empty array and assigns the array to a variable" do
       # create your array here
       # replace the underscore in expect with your variable
-      expect(__).to be_an(Array)
+      a=[]
+      expect(a).to be_an(Array)
     end
 
     context 'instantiating an array - named answer -  with 2 objects' do
       # create your array here
+      answer=["a","b"]
       # your array should be set to equal a local variable named answer
 
       it "is an array" do
@@ -28,27 +30,29 @@ describe "working with arrays" do
       @taylor_swift = ["Welcome to New York", "Blank Space", "Style", "Out of The Woods"]
     end
 
+    taylor_swift = ["Welcome to New York", "Blank Space", "Style", "Out of The Woods"]
+
     it "returns the first element in the array using its positive index" do
       # replace the underscore with your answer
-      answer = __
+      answer = taylor_swift[0]
       expect(answer).to eq("Welcome to New York")
     end
 
     it "returns the third element in the array using its positive index" do
       # replace the underscore with your answer
-      answer = __
+      answer = taylor_swift[2]
       expect(answer).to eq("Style")
     end
 
     it "returns the last element in the array using its negative index" do
       # replace the underscore with your answer
-      answer = __
+      answer = taylor_swift.at(-1)
       expect(answer).to eq("Out of The Woods")
     end
 
     it "returns the second element in the array using its negative index" do
       # replace the underscore with your answer
-      answer = __
+      answer = taylor_swift.at(-3)
       expect(answer).to eq("Blank Space")
     end
   end
@@ -58,16 +62,18 @@ describe "working with arrays" do
       @south_east_asia = ["Thailand", "Cambodia", "Singapore", "Myanmar"]
     end
 
+    south_east_asia = ["Thailand", "Cambodia", "Singapore", "Myanmar"]
+
     it 'gets the first element in the array ' do
       # replace the underscore with your answer
-      answer = __
+      answer = south_east_asia[0]
       expect(answer).to eq("Thailand")
     end
 
 
     it 'gets the last element in the array' do
       # replace the underscore with your answer
-      answer = __
+      answer = south_east_asia[3]
       expect(answer).to eq("Myanmar")
     end
   end
@@ -77,9 +83,10 @@ describe "working with arrays" do
       @programming_languages = ["Ruby", "Javascript", "Python", "C++", "Java", "Lisp", "PHP", "Clojure"]
     end
 
+    programming_languages = ["Ruby", "Javascript", "Python", "C++", "Java", "Lisp", "PHP", "Clojure"]
     it 'returns the length of the array' do
       # replace the underscore with your answer
-      answer = __
+      answer = programming_languages.length
       expect(answer).to eq(8)
     end
   end
