@@ -29,7 +29,7 @@ describe "working with arrays" do
     end
 
     it "returns the first element in the array using its positive index" do
-      # replace the underscore with your answer
+      # replace the underscore with your answerd
       answer = __
       expect(answer).to eq("Welcome to New York")
     end
