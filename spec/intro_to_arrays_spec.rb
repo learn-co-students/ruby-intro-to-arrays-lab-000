@@ -5,12 +5,14 @@ describe "working with arrays" do
 
     it "creates an empty array and assigns the array to a variable" do
       # create your array here
+      ary = Array.new
       # replace the underscore in expect with your variable
-      expect(__).to be_an(Array)
+      expect(ary).to be_an(Array)
     end
 
     context 'instantiating an array - named answer -  with 2 objects' do
       # create your array here
+      answer = [1, 2] 
       # your array should be set to equal a local variable named answer
 
       it "is an array" do
@@ -29,26 +31,27 @@ describe "working with arrays" do
     end
 
     it "returns the first element in the array using its positive index" do
-      # replace the underscore with your answer
-      answer = __
+      answer = @taylor_swift[0]
       expect(answer).to eq("Welcome to New York")
     end
 
     it "returns the third element in the array using its positive index" do
       # replace the underscore with your answer
-      answer = __
+
+      answer = @taylor_swift[2]
       expect(answer).to eq("Style")
     end
 
     it "returns the last element in the array using its negative index" do
       # replace the underscore with your answer
-      answer = __
+
+      answer = @taylor_swift[-1]
       expect(answer).to eq("Out of The Woods")
     end
 
     it "returns the second element in the array using its negative index" do
       # replace the underscore with your answer
-      answer = __
+      answer = @taylor_swift[-3]
       expect(answer).to eq("Blank Space")
     end
   end
@@ -60,14 +63,14 @@ describe "working with arrays" do
 
     it 'gets the first element in the array ' do
       # replace the underscore with your answer
-      answer = __
+      answer = @south_east_asia.first
       expect(answer).to eq("Thailand")
     end
 
 
     it 'gets the last element in the array' do
       # replace the underscore with your answer
-      answer = __
+      answer = @south_east_asia.last
       expect(answer).to eq("Myanmar")
     end
   end
@@ -79,7 +82,7 @@ describe "working with arrays" do
 
     it 'returns the length of the array' do
       # replace the underscore with your answer
-      answer = __
+      answer = @programming_languages.length
       expect(answer).to eq(8)
     end
   end
