@@ -1,0 +1,116 @@
+1. Understand the purpose of arrays. 
+
+2. Create and populate and array
+
+3. Manipulate an Array
+
+4. Reference the Ruby documentation on arrays
+
+5. Retrieve data from an array 
+
+--- 
+
+Variables only allow us to store one pieces of information at a time. 
+
+What is an array?
+
+An array is like a list but in code form. An array is a way to store pieces of data as a collection. Arrays can contain any datatypes in combination - strings, integers, other arrays, hashes, etc. 
+
+
+2. Creating an Array:
+
+The Literal Constructor:
+
+my_array = []
+
+
+The Class Constructor:
+
+my_array = Array.new
+
+
+Class: A class is a like a tempate for creating object in ruby. There is an array class from which every array you create is inherited, making all arrays capable of certain shared behaviors/responsive to certain methods. 
+
+--- 
+
+To make an array that isn't empty, you can separate each item, known 
+
+
+3.  Manipulating Arrays
+
+If an array is a storage container for a list of data - then we can imagine adding and removing individual items from it. 
+
+* Shovel method; 
+
+The shovel method employs the "shovel" operator, and allow s you to shovel items to the end of an array
+
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats << "nala cat"
+puts famous_cats.inspect
+  => ["lil' bub", "grumpy cat", "Maru", "nala cat"]
+
+The .inspect metod
+
+.inspect method returns a string containing a human-readable representation of an object. 
+
+
+In this case, the list of strings helf in the array. 
+
+The shove method (<<)
+
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats.inspect("nala cat")
+puts famous_cats.inspect
+  => ["lil' bub", "grumpy cat", "Maru", "nala cat"]
+
+
+* The .unshift method 
+
+Add items to the front of an array
+
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats.unshift("nala cat")
+puts famous_cats.inspect
+  => ["nala cat", "lil' bub", "grumpy cat", "Maru"]
+
+
+* The .pop method
+
+Removing Items from an Array 
+
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+maru_cat = famous_cats.pop
+
+puts famous_cats.inspect 
+ => ["lil' bub", "grumpy cat"]
+puts maru_cat
+ => Maru
+
+
+* The .sort method 
+
+This method rearranges the contents of the array by sorting them. For string, this means alphabetically - for numbers this means the smallest to the highest. 
+
+Spaceship operator
+
+
+* The .reverse method reverses an array 
+
+famous_wizards = ["Dumbledore", "Gandalf", "Merlin"]
+
+famous_wizards.reverse
+  => ["Merlin", "Gandalf", "Dumbledore"] 
+
+
+--- 
+
+The .include? Method
+
+This method will return a boolean of whether or not an array contains or includes an element submitted inside the parentheses. 
+
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats.include?("Garfield")
+  => false
+famous_cats.include?("Maru")
+  => true
+
